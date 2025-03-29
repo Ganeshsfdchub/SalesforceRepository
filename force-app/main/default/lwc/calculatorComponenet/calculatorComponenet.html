@@ -1,0 +1,36 @@
+<!--
+  @description       : Calculator Component
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-25-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <div class="box">
+      <lightning-card title="Calculator Component" icon-name="standard:account">
+
+        <lightning-input label="Enter First number" 
+                         placeholder="First number" 
+                         name="fnum"
+                         onchange={fchange}></lightning-input></br>
+                           
+        <lightning-input label="Enter Second number" 
+                         placeholder="second number" 
+                         name="snum"
+                         onchange={schange}></lightning-input></br>
+
+        <lightning-input label="Result"
+                         placeholder="Result" 
+                         name="rnum"
+                         value={Result}></lightning-input></br></br>
+
+        <lightning-button label="Addition" variant="brand" onclick={addfun}></lightning-button>&nbsp;
+        <lightning-button label="Subtraction" variant="brand" onclick={Subfun}></lightning-button>&nbsp;
+        <lightning-button label="Multiplication" variant="brand" onclick={Mulfun}></lightning-button>&nbsp;
+        <lightning-button label="Division" variant="brand" onclick={Divfun}></lightning-button>&nbsp;
+        <lightning-button label="Modulus" variant="brand" onclick={Modfun}></lightning-button>
+
+      </lightning-card>
+
+    </div>
+</template>
