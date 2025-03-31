@@ -1,11 +1,53 @@
+<!--lightning-datatable displays tabular data where each column renders the content based on the data type.
+
+The default data type on a column is text.
+
+Tables can be populated during initialization using the data, columns, and key-field attributes.
+
+The key-field attribute is required for correct table behavior.
+
+It associates each row with a unique identifier. The value you use for key-field is case-sensitive and
+must match what's in your data array. If you use key-field="Id", make sure the Id you provide in the data array uses Id and not id.
+
+Default datatable
+
+Hide checkbox column
+
+Show row number
+
+Displaying and formatting of columns with appropriate data types
+
+Infinite scrolling of rows
+
+Inline editing for some data types
+
+Sorting of columns by ascending and descending order
+
+Text wrapping and clipping
+
+Row numbering column
+
+Cell content alignment
+
+Header actions
+
+Header wrapping
+
+Row-level actions
+
+Resizing of columns
+
+Selecting of rows-->
+
+
 <template>
     <lightning-card title="Default Lightning Data Table" icon-name="standard:account">
         <lightning-datatable
-                    data={data}
-                    columns={columns}
+                    data={accnts}
+                    columns={clms}
                     key-field="Id"
-                    hide-checkbox-column="true"
                     show-row-number-column="true"
+                    inline-editing="true"
         ></lightning-datatable>
     </lightning-card>
 </template>
