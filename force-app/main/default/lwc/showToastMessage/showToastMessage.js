@@ -9,7 +9,7 @@ export default class ShowToastMessage extends LightningElement
                                              title : 'Success',
                                              message : 'Record has been created successfully',
                                              variant : 'success',
-                                             mode : 'sticky'
+                                             mode : 'pester'
                                           });
                                           this.dispatchEvent(success);
     }
