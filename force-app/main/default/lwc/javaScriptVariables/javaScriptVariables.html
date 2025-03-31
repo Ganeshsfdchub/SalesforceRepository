@@ -1,0 +1,185 @@
+<!-- Variables
+
+Variables are the containers for storing data values.
+var, const, and let are the reserved keywords to declare a variable.
+JavaScript identifiers are case-sensitive.
+You can assign a value to a variable using the equal (=) operator when you declare it or before using it.
+
+Keyword	          const	     let        var
+
+Global scope	    No	       No	        Yes
+
+Function scope	  Yes    	   Yes	      Yes
+
+Block scope	      Yes	       Yes	      No
+ 
+Canbe reassigned   No	       Yes        Yes
+
+Notes:
+
+var   :   variables can be updated and also can be re-declared.
+let   :   variables can be updated but not re-declared.
+const :   variables can't  be updated can't be re-declared.-->
+
+<template>
+ 
+
+    var course = 'Zero to hero' <!--Declear variable-->
+    console.log(course);
+
+    course = 'In lwc Zero to hero' ;<!--updating variable-->
+    console.log(course);
+
+    var course = 'New Zero to hero';<!--re-Declear variable-->
+    console.log(course);
+
+
+   
+  <!--var keyword supports only two type Global scope, function but not block level scope-->
+
+  <!--Global level Var variable-->
+  var course = 'Zero to hero' <!--Declear variable it not inside function or inside block it takes/bind as window/global scope property -->
+  console.log(window.course); <!--it print as 'zero to hero'-->
+
+
+  <!--function level Var variable-->
+   function abc()
+   {
+
+     var newcourse = 'hero in lwc'
+     console.log(newcourse);   <!--print hero in lwc, so inside of the function it is support--->
+   }
+   abc() <!--calling function--> 
+   console.log(newcourse);   <!--not print hero in lwc, so outside of the function it is not support-->
+
+
+   <!--Block level Var variable-->
+    if(2===2)
+    {
+        var x = 10
+        console.log(x) <!--not print x value, so inside of the block it is not support-->
+    }
+    console.log(x) <!--print x value = 10, so outside of the block it is support-->
+
+
+    Finally var supports : Global scop, Function scope but not Block scope
+
+</template>
+
+
+
+
+
+
+
+
+
+
+<template>
+   
+
+    <!--let  :  variables can be updated but not re-declared.-->
+
+    let course = 'Zero to hero'    <!--Declear variable-->
+    console.log(course)
+
+    course = 'In lwc Zero to hero' <!--updating variable-->
+    console.log(course)
+
+    var course = 'New Zero to hero' <!-- Can't re-Declear variable-->
+    console.log(course)
+
+
+
+
+
+    <!--Let keyword supports only two type  function level, block level but not Global scope-->
+
+    <!--Global level let variable-->
+    Let course = 'Zero to hero' <!--Not support Global scope/window Scope -->
+    console.log(window.course); <!--it not print course value-->
+
+
+    <!--function level Let variable-->
+
+    function abc()
+    {
+
+      let newcourse = 'hero in lwc'
+      console.log(newcourse);   <!--print hero in lwc, so inside of the function level it is support--->
+    }
+      abc() <!--calling function--> 
+      console.log(newcourse);   <!--not print hero in lwc, so outside of the function it is not support-->
+
+
+     <!--Block level Let variable-->
+
+     if(2===2)
+     {
+         let x = 10
+         console.log(x) <!-- print x value, so inside of the block level it is  support-->
+     }
+         console.log(x) <!--not print x value , so outside of the block it is not support-->
+
+         Finally Let supports :  Function level, block level but not Global level
+     <
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template>
+
+   <!--const  :  variables can't be updated can't be re-declared.-->
+
+    const course = 'Zero to hero'    <!--Declear variable-->
+    console.log(course)
+
+    course = 'In lwc Zero to hero' <!--can't updating variable-->
+    console.log(course)
+
+    const course = 'New Zero to hero' <!--can't re-Declear variable-->
+    console.log(course)
+
+
+    
+
+    <!--Global level let variable-->
+    const course = 'Zero to hero' <!--Not support Global scope/window Scope -->
+    console.log(window.course); <!--it not print course value-->
+
+
+    <!--function level Let variable-->
+
+    function abc()
+    {
+
+      const newcourse = 'hero in lwc'
+      console.log(newcourse);   <!--print hero in lwc, so inside of the function level it is support--->
+    }
+      abc() <!--calling function--> 
+      console.log(newcourse);   <!--not print hero in lwc, so outside of the function it is not support-->
+
+
+     <!--Block level Let variable-->
+
+     if(2===2)
+     {
+         const x = 10
+         console.log(x) <!-- print x value, so inside of the block level it is  support-->
+     }
+         console.log(x) <!--not print x value , so outside of the block it is not support-->
+
+         Finally const supports :  Function level, block level but not Global level
+
+</template>

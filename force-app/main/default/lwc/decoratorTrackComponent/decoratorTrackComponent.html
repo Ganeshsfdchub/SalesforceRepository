@@ -1,0 +1,23 @@
+<template>
+    <diV>
+     <lightning-card title="Tack Decorator" icon-name="standard:account">
+
+       <lightning-input label="show Custom message" 
+                        placeholder="show Custom message"
+                        name="sname"
+                        value={showcustommessage}
+                        onchange={trackfun}></lightning-input></br>
+                        
+       <lightning-input label="show Customer Details" 
+                        placeholder="show Customer Details"
+                        name="cname"
+                        value={showcustomerdetails}
+                        onchange={trackfun}></lightning-input></br></br></br>
+
+            Show custom message..........:<b>{showcustommessage}</b> </br>
+            show Customer Details........:<b>{showcustomerdetails}</b>
+
+
+     </lightning-card>
+    </diV>
+</template>
