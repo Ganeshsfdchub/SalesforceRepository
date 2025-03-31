@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  icon-name="standard:account">
+        <div slot="title">
+            <h3>Account</h3>        
+        </div><br/>
+
+        <b> Number of Records is -----:{numbrs}</b><br/><br/>
+
+        <lightning-datatable 
+                        data={accnts}
+                        columns={clm}
+                        key-field="id">
+        </lightning-datatable>
+    </lightning-card>
+</template> 

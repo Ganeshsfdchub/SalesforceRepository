@@ -1,0 +1,28 @@
+<!--
+ Directives : Directives are special HTML attributes, in lwc we have two special directives for Conditional Rendering
+
+ 1] IF : True
+ 2] IF : False
+
+-->
+
+<template>
+    <lightning-card title="Conditional Rendering" icon-name="standard:account">
+         <lightning-button label="Click to Show Text" variant="brand" onclick={handleclick}></lightning-button>&nbsp;&nbsp;
+         <lightning-button label="Click to Hide Text" variant="brand" onclick={handlehideclick}></lightning-button>&nbsp;&nbsp;
+         <lightning-button label={handltooglelabel} variant="brand" onclick={tooglebtnhndltext}></lightning-button><br/><br/>
+
+          <template if:true={isShow}>
+              <h2>Hi thanks for clicking this is True BLOCK</h2>
+          </template>
+          <template if:true={toogletext}>
+            <h2>Hi, Toogle button</h2>
+        </template>
+          
+         
+    </lightning-card>
+
+
+
+
+</template>

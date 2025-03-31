@@ -1,0 +1,26 @@
+<!--
+  @description       : WirePropertyLtngCard
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-29-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <template if:true={wireproperty} for:each={wireproperty.data} for:item="acc">
+        
+    <lightning-card icon-name="standard:account" key={acc.Name}>
+        <div slot="title">
+            <h2>Account</h2>
+            <b>{acc.Name}</b>
+        </div>
+
+         <p>Account name is------------------{acc.Name}</p>
+         <p>Account rating is------------------{acc.Rating}</p>
+         <p>Account phone is------------------{acc.Phone}</p>
+         <p>Account fax is------------------{acc.Fax}</p>
+         <p>Account industry is------------------{acc.Industry}</p>
+         <p>Account Annualrevenue is------------------{acc.Annualrevenue}</p>
+    </lightning-card>
+</template>
+
+</template>

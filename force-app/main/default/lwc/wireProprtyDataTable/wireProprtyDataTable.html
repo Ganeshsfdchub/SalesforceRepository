@@ -1,0 +1,21 @@
+<!--
+  @description       : wirePropertyDataTable
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-29-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card icon-name="standard:account">
+        <div slot="title">
+            <b><h2>Account</h2></b>
+        </div>
+
+        <lightning-datatable 
+                data={wireproperty.data}
+                columns={clms}
+                key-field="Id">         
+        </lightning-datatable>
+
+    </lightning-card>
+</template>
