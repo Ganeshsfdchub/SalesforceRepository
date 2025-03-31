@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Show Toast Event Message" icon-name="satndard:account">
+
+       <lightning-button  label="Success Message"
+                          variant="success"
+                          onclick={handleSuccessMessage}
+                          class="slds-m-around_medium"></lightning-button>&nbsp;
+
+       <lightning-button  label="Warning Message"
+                          variant="brand"
+                          onclick={handleWarningMessage}
+                          class="slds-m-around_medium"></lightning-button>&nbsp;
+
+      <lightning-button   label="Error Message"
+                          variant="destructive"
+                          onclick={handleErrorMessage}
+                          class="slds-m-around_medium"></lightning-button>&nbsp;
+                          
+        <lightning-button label="Info Message"
+                          variant="base"
+                          onclick={handleInfoMessage}
+                          class="slds-m-around_medium"></lightning-button>&nbsp;
+                          
+    </lightning-card>
+</template>
